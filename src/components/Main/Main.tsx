@@ -51,7 +51,7 @@ export default function Main() {
             </div>
 
             <div className="w-screen bg-black h-[375px] text-white text-center flex flex-col items-center justify-center">
-                <h1 className="text-3xl font-bold leading-9 w-full w-[1100px]">“Como a literatura, o amor e a dor, as viagens são uma bela ocasião para nos encontrarmos com nós próprios”</h1>
+                <h1 className="text-3xl font-bold leading-9 w-full w-[1050px]">“Como a literatura, o amor e a dor, as viagens são uma bela ocasião para nos encontrarmos com nós próprios”</h1>
                 <p>-Marguerite Yourcenar</p>
             </div>
         </>
