@@ -2,4 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+    overflow-x: hidden;
+}
 
+.head {
+    background-color: black;
+    background-image: url("../../public/assets/images/bghead.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-1 {
+    background-image: url("../../public/assets/images/place-1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-2 {
+    background-image: url("../../public/assets/images/place-2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-3 {
+    background-image: url("../../public/assets/images/place-3.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
