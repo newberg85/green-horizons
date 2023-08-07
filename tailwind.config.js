@@ -18,7 +18,7 @@ module.exports = {
       'very-dark-blue': '#1d1e25',
       'purple': '#3f3cbb',
       'midnight': '#121063',
-      'metal': '#565584',
+      'metal': '#F3F3F3',
       'tahiti': '#fafafa',
       'silver': '#9095a7',
       'bubble-gum': '#ff77e9',

@@ -36,6 +36,7 @@ function NavBar() {
 
   const menuStyle = {
     backgroundColor: scrolling ? "white" : "transparent",
+    boxShadow: scrolling ? "0px 2px 4px rgba(0, 0, 0, 0.1)" : "none",
     transition: "background-color 0.3s ease",
   };
 
@@ -45,9 +46,12 @@ function NavBar() {
   }
 
   const buttonStyle = {
-    // backgroundColor: scrolling ? "black" : "transparent",
-    color: scrolling ? "black": "white",
+    color: scrolling ? "black" : "white",
     borderColor: scrolling ? "black" : "white",
+
+    ":hover": {
+      color: "black",
+    },
   }
 
   const [navbar, setNavbar] = useState(false);
@@ -56,7 +60,7 @@ function NavBar() {
       <nav className="w-full fixed top-0 left-0 right-0 z-10" style={menuStyle}>
         <div className="justify-between px-4 mx-auto lg:max-w-full md:items-center md:flex md:px-36">
           <div>
-            <div className="flex items-center justify-between py-3 py-5 md:block">
+            <div className="flex items-center justify-between py-5 md:block">
               {/* LOGO */}
               <Link href="/">
                 <h1 className='font-bold text-xl text-white' style={textStyle}><span className='text-green'>Green</span>horizons</h1>
@@ -84,7 +88,7 @@ function NavBar() {
           </div>
           <div>
             <div
-              className={`flex-1  items-center block md:hidden lg:block sm:hidden md:pb-0 md:mt-0 ${navbar ? 'p-12 md:p-0 block' : 'hidden'
+              className={`flex-1 items-center block md:hidden lg:block sm:hidden md:pb-0 md:mt-0 ${navbar ? 'p-12 md:p-0 block' : 'hidden'
                 }`}
             >
               <ul className="h-screen md:h-auto items-center justify-center md:flex">
@@ -119,7 +123,7 @@ function NavBar() {
 
           <div>
             <div className='hidden flex items-center  py-3 md:py-5 lg:block md:hidden sm: '>
-                <Button style={buttonStyle}>Agendar</Button>
+              <Button style={buttonStyle}>Agendar</Button>
             </div>
           </div>
         </div>

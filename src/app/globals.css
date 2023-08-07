@@ -18,23 +18,17 @@ body{
     background-repeat: no-repeat;
 }
 
-.img-1 {
-    background-image: url("../../public/assets/images/place-1.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.head:after {
+    display: block;
+    position: absolute;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #000 100%);
+    content: '';
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    opacity: 0.5;
+    z-index: -10;
 }
 
-.img-2 {
-    background-image: url("../../public/assets/images/place-2.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
 
-.img-3 {
-    background-image: url("../../public/assets/images/place-3.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
