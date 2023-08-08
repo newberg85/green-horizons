@@ -5,10 +5,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Button from "@/components/Ui/Button"
 
-//images
-//import Logo from "public/assets/images/logo.svg";
-//import Hamburger from "public/assets/images/icon-hamburger.svg";
-//import Close from "public/assets/images/icon-close.svg"
+//svg
+import { OpenIcon } from '../../../public/assets/svg/openmenu';
+import { CloseIcon } from '../../../public/assets/svg/closemenu';
 
 
 function NavBar() {
@@ -34,6 +33,8 @@ function NavBar() {
     };
   }, []);
 
+  
+
   const menuStyle = {
     backgroundColor: scrolling ? "white" : "transparent",
     boxShadow: scrolling ? "0px 2px 4px rgba(0, 0, 0, 0.1)" : "none",
@@ -54,6 +55,14 @@ function NavBar() {
     },
   }
 
+  const iconStyle = {
+    color: scrolling ? "black" : "white",
+    stroke: scrolling ? "black" : "white",
+    fill: scrolling ? "black" : "white",
+  }
+
+  
+
   const [navbar, setNavbar] = useState(false);
   return (
     <>
@@ -67,54 +76,48 @@ function NavBar() {
               </Link>
               {/* HAMBURGER BUTTON FOR MOBILE */}
               <div className="lg:hidden">
-                {/* <button
-                  className="p-2 text-gray-700 rounded-md outline-none " onClick={toggleNavbar}
+                <button
+                  className="p-2 text-gray-700 rounded-md outline-none " onClick={toggleNavbar} style={iconStyle}
 
                 >
                   {navbar ? (
-                    <Image src={Close} width={30} height={30} alt="logo" />
+                    <CloseIcon />
                   ) : (
-                    <Image
-                      src={Hamburger}
-                      width={30}
-                      height={30}
-                      alt="logo"
-                      className="focus:border-none active:border-none "
-                    />
+                    <OpenIcon />
                   )}
-                </button> */}
+                </button>
               </div>
             </div>
           </div>
           <div>
             <div
-              className={`flex-1 items-center block md:hidden lg:block sm:hidden md:pb-0 md:mt-0 ${navbar ? 'p-12 md:p-0 block' : 'hidden'
+              className={`flex-1 items-center block md:hidden lg:block sm:hidden md:pb-0 md:mt-0 ${navbar ? 'p-12 sm:p-0 block' : 'hidden'
                 }`}
             >
-              <ul className="h-screen md:h-auto items-center justify-center md:flex">
+              <ul className="h-1/2 md:h-auto items-center justify-center md:flex">
                 <li className="text-base text-white py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-silver md:hover:bg-transparent md:text-sm" style={textStyle}>
+                  <Link href="/">
+                    Home
+                  </Link>
+                </li>
+                <li className="text-base text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-silver md:hover:bg-transparent md:text-sm" style={textStyle}>
+                  <Link href="#services">
+                    Serviços
+                  </Link>
+                </li>
+                <li className="text-base text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-silver md:hover:bg-transparent md:text-sm" style={textStyle}>
                   <Link href="#about">
-                    Pricing
+                    Sobre
                   </Link>
                 </li>
-                <li className="text-base text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-silver md:hover:bg-transparent md:text-sm" style={textStyle}>
-                  <Link href="#blog">
-                    Product
+                <li className="text-base text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-silver  border-purple-900  md:hover:text-silver md:hover:bg-transparent md:text-sm" style={textStyle}>
+                  <Link href="#careers">
+                    Carreiras
                   </Link>
                 </li>
-                <li className="text-base text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-silver md:hover:bg-transparent md:text-sm" style={textStyle}>
+                <li className="text-base text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-silver  border-purple-900  md:hover:text-silver md:hover:bg-transparent md:text-sm" style={textStyle}>
                   <Link href="#contact">
-                    About Us
-                  </Link>
-                </li>
-                <li className="text-base text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-silver  border-purple-900  md:hover:text-silver md:hover:bg-transparent md:text-sm" style={textStyle}>
-                  <Link href="#projects">
-                    Careers
-                  </Link>
-                </li>
-                <li className="text-base text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-silver  border-purple-900  md:hover:text-silver md:hover:bg-transparent md:text-sm" style={textStyle}>
-                  <Link href="#projects">
-                    Community
+                    Contato
                   </Link>
                 </li>
               </ul>

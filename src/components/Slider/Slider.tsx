@@ -10,9 +10,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import Greece from "public/assets/images/country-1.png";
 import Canada from "public/assets/images/country-2.png";
 import Peru from "public/assets/images/country-3.png";
-// import Ali from "public/assets/images/avatar-ali.png";
-// import Richard from "public/assets/images/avatar-richard.png";
-// import Shanai from "public/assets/images/avatar-shanai.png";
+
 
 //icons
 import Star from "public/assets/svg/staricon.svg"
@@ -52,7 +50,7 @@ export default function App() {
           },
         }}
 
-        className="mySwiper p-5 sm:p-40 mt-12"
+        className="mySwiper p-2 sm:p-40 mt-12 "
       >
         <SwiperSlide className='w-full relative'>
           <div className='w-full h-ful flex flex-col items-center center gap-8 p-2'>
