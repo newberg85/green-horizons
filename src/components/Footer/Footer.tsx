@@ -25,7 +25,7 @@ export default function Footer() {
                         </Link>
 
                         <div>
-                            <p className='text-white'>Mergulhe nesse mundo maravilhoso e descubra destinos fascinantes com a nossa agência.</p>
+                            <p className='text-white text-center sm:text-left'>Mergulhe nesse mundo maravilhoso e descubra destinos fascinantes com a nossa agência.</p>
                         </div>
 
                         {/* Social */}
