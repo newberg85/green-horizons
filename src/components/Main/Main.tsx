@@ -1,6 +1,5 @@
 import Image from "next/image";
 
-import Header from "@/components/Header/Header";
 import Button from "@/components/Ui/Button"
 import Slider from "@/components/Slider/Slider"
 
@@ -13,7 +12,7 @@ import Beach from "public/assets/images/place-3.png";
 export default function Main() {
     return (
         <>
-            <Header />
+            
             <div className="flex flex-col sm:flex-row w-screen sm:w-full md:px-12">
                 <div className="sm:w-1/2 w-full">
                     <h1 className="sm:text-[40px] text-[24px] pl-3 pr-3 font-bold leading-9 sm:text-left text-center">Onde a natureza e a aventura estão unidas</h1>
@@ -53,11 +52,11 @@ export default function Main() {
                 </div>
                 <div className="h-full w-full sm:w-[582px]">
                     <div className=" w-full h-full">
-                        <Image 
-                        src={Beach}
-                        width={582}
-                        height={624}
-                        alt=""
+                        <Image
+                            src={Beach}
+                            width={582}
+                            height={624}
+                            alt=""
                         />
                     </div>
                 </div>
@@ -74,7 +73,6 @@ export default function Main() {
             </div>
 
             <Slider></Slider>
-
         </>
     )
 }

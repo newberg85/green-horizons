@@ -33,7 +33,7 @@ function NavBar() {
     };
   }, []);
 
-  
+
 
   const menuStyle = {
     backgroundColor: scrolling ? "white" : "transparent",
@@ -61,15 +61,15 @@ function NavBar() {
     fill: scrolling ? "black" : "white",
   }
 
-  
+
 
   const [navbar, setNavbar] = useState(false);
   return (
     <>
       <nav className="w-full fixed top-0 left-0 right-0 z-10" style={menuStyle}>
-        <div className="justify-between px-4 mx-auto lg:max-w-full md:items-center md:flex md:px-36">
+        <div className="justify-between px-4 mx-auto lg:max-w-full md:items-center md:flex sm:px-36">
           <div>
-            <div className="flex items-center justify-between py-5 md:block">
+            <div className="flex items-center justify-between py-5 sm:block">
               {/* LOGO */}
               <Link href="/">
                 <h1 className='font-bold text-xl text-white' style={textStyle}><span className='text-green'>Green</span>horizons</h1>
@@ -91,10 +91,10 @@ function NavBar() {
           </div>
           <div>
             <div
-              className={`flex-1 items-center block md:hidden lg:block sm:hidden md:pb-0 md:mt-0 ${navbar ? 'p-12 sm:p-0 block' : 'hidden'
+              className={`flex-1 items-center block md:hidden lg:block md:pb-0 md:mt-0 ${navbar ? 'p-12 sm:p-0 block' : 'hidden'
                 }`}
             >
-              <ul className="h-1/2 md:h-auto items-center justify-center md:flex">
+              <ul className="h-1/2 md:h-auto items-center justify-center sm:flex">
                 <li className="text-base text-white py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-silver md:hover:bg-transparent md:text-sm" style={textStyle}>
                   <Link href="/">
                     Home
