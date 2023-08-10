@@ -50,7 +50,7 @@ export default function App() {
           },
         }}
 
-        className="mySwiper p-2 sm:p-40 mt-12 "
+        className="mySwiper p-2 sm:p-40 mt-12 mb-12"
       >
         <SwiperSlide className='w-full relative'>
           <div className='w-full h-ful flex flex-col items-center center gap-8 p-2'>
@@ -63,7 +63,7 @@ export default function App() {
               />
             </div>
             <div className='w-full h-full flex flex-col items-center center gap-4'>
-              <h1 className='text-dark-blue font-[700]'>Santorini, Grécia</h1>
+              <h1 className='text-black font-[700]'>Santorini, Grécia</h1>
               <div className=' flex items-center justify-center bg-metal p-3 rounded-full gap-1'>
                 <div className='w-[25px]'>
                   <Image
@@ -92,7 +92,7 @@ export default function App() {
               />
             </div>
             <div className='w-full h-full flex flex-col items-center center gap-4'>
-              <h1 className='text-dark-blue font-[700]'>Niagra falls, Canada</h1>
+              <h1 className='text-black font-[700]'>Niagra falls, Canada</h1>
               <div className=' flex items-center justify-center bg-metal p-3 rounded-full gap-1'>
                 <div className='w-[25px]'>
                   <Image
@@ -120,7 +120,7 @@ export default function App() {
               />
             </div>
             <div className='w-full h-full flex flex-col items-center center gap-4'>
-              <h1 className='text-dark-blue font-[700]'>Machu Picchu, Peru</h1>
+              <h1 className='text-black font-[700]'>Machu Picchu, Peru</h1>
               <div className=' flex items-center justify-center bg-metal p-3 rounded-full gap-1'>
                 <div className='w-[25px]'>
                   <Image
@@ -148,7 +148,7 @@ export default function App() {
               />
             </div>
             <div className='w-full h-full flex flex-col items-center center gap-4'>
-              <h1 className='text-dark-blue font-[700]'>Santorini, Grécia</h1>
+              <h1 className='text-black font-[700]'>Santorini, Grécia</h1>
               <div className=' flex items-center justify-center bg-metal p-3 rounded-full gap-1'>
                 <div className='w-[25px]'>
                   <Image

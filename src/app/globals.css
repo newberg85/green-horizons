@@ -31,4 +31,8 @@ body{
     z-index: -10;
 }
 
-
+.mask {
+    position: relative;
+    overflow: hidden;
+    display: inline-flex;
+}
