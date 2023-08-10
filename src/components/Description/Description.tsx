@@ -1,17 +1,11 @@
 "use client"
 
-import Image from "next/image";
-import NavBar from "../Nav/Nav";
-import { gsap } from "gsap";
-import { useEffect, useRef } from "react";
-import { CustomEase } from "gsap/dist/CustomEase";
+import { useRef } from "react";
 import { slideUp, opacity } from './animation';
-
-//images 
-import Bgheader from "/public/assets/images/bg.png"
-import Button from "@/components/Ui/Button"
-import { ArrowIcon } from "../../../public/assets/svg/arrow";
 import { useInView, motion } from "framer-motion";
+
+//button
+import Button from "@/components/Ui/Button"
 
 export default function Description() {
     const phrase = "Onde a natureza e a aventura estão unidas";
